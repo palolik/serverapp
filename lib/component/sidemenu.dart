@@ -4,6 +4,8 @@
 import 'package:webcheck2/screens/main_screen.dart';
 import 'package:webcheck2/pages/coachingpages/home_page.dart';
 import 'package:webcheck2/pages/studentspages/home_page.dart';
+import 'package:webcheck2/pages/notespages/home_page.dart';
+
 import 'package:webcheck2/pages/teacherspages/home_page.dart';
 
 //import 'package:admin_dash/screens/sheet_datbase.dart';
@@ -67,13 +69,12 @@ class SideMenu extends StatelessWidget {
               },
             ),
             DrawerListTile(
-              title: "Sheet database",
+              title: "Notes database",
               press: () {
-                //        Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //             builder: (context) => const SheetDatabase()),
-                //        );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NoteDatabase()),
+                );
               },
             ),
             DrawerListTile(
